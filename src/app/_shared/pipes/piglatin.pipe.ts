@@ -10,6 +10,9 @@ export class PigLatinPipe implements PipeTransform {
         if (!value || value.length === 0) {
             return '';
         }
+        if (!/^[a-zA-Z]*$/.test(value)) {
+            return 'Only letters allowed!';
+        }
         return PigLatin.translate(value);
     }
 }
