@@ -25,9 +25,12 @@ export class PigLatin {
             return this.addSeparatorAndSuffix(value);
         }
         const indexNextVowel = this.findIndexNextVowel(value);
-        const consonants = value.substr(0, indexNextVowel);
-        const restOfWord = value.substr(indexNextVowel, value.length);
-        return this.addSeparatorConsonantsAndSuffix(restOfWord, consonants);
+        if (!!~indexNextVowel) {
+            const consonants = value.substr(0, indexNextVowel);
+            const restOfWord = value.substr(indexNextVowel, value.length);
+            return this.addSeparatorConsonantsAndSuffix(restOfWord, consonants);
+        }
+        return this.addSeparatorAndSuffix(value);
     }
 
     private isVowel(letter: string) {
