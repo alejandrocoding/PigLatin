@@ -1,0 +1,16 @@
+@import 'base';
+footer {
+    position: fixed;
+    bottom: 0;
+    height: $footer-height;
+    line-height: $footer-height;
+    background-color: $dark-color;
+    .made {
+      font-size: 12px;
+      text-align: center;
+      margin: 0;
+      .love {
+        color: $accent-color;
+      }
+    }
+}  

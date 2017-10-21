@@ -1,0 +1,28 @@
+@import 'base';
+header {
+    height: $header-height;
+    background-color: $dark-color;
+    color: $white;
+    .title {
+        font-size: 60px;
+        font-family: 'Baloo Da', cursive;
+        margin: 0;
+        line-height: $header-height;        
+    }
+    .nav {
+        text-align: right;
+        .list {
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            .list-item {
+                display: inline-block;
+                margin: auto 25px;
+                .item {
+                    line-height: $header-height;
+                }
+            }
+        }
+    }
+}

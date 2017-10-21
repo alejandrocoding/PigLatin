@@ -1,0 +1,25 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+@import 'base';
+html {
+    body {
+        min-height: 100vh;
+        background-color: $dark-color-light;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        color: $font-color;
+        hr {
+            border-color: $accent-color;
+        }
+        a {
+            color: $font-color;
+            &:hover, &.active {
+                text-decoration: none;
+                color: $accent-color;
+            }
+        }
+        .link {
+            color: $accent-color;
+        }
+    }
+}
