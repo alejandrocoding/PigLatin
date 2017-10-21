@@ -2,12 +2,12 @@
     <div class="row">
         <div class="col-sm-12">
             <label for="translator">Pig Latin Word:</label>
-            <input type="text" id="translator" class="form-control form-control-lg" placeholder="Type in an English Word">
+            <input type="text" id="translator" class="form-control form-control-lg" placeholder="Type in an English Word" [(ngModel)]="Typing">
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <p class="result">anana-bay</p>
+            <p class="result">{{ Typing | pigLatinPipe }}</p>
         </div>
     </div>
 </div>
