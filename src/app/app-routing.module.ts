@@ -8,4 +8,4 @@ const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
-export const AppRoutes: ModuleWithProviders = RouterModule.forRoot(routes);
+export const AppRoutes: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true });
