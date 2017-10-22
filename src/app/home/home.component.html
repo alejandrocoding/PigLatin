@@ -1,12 +1,13 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12">
             <label for="translator">Pig Latin Word:</label>
-            <input type="text" id="translator" class="form-control form-control-lg" placeholder="Type in an English Word" [(ngModel)]="Typing">
+            <input type="text" id="translator" class="form-control form-control-lg" placeholder="Type in an English Word" [(ngModel)]="Typing"
+                maxlength="30">
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12">
             <p class="result">{{ Typing | pigLatinPipe }}</p>
         </div>
     </div>
