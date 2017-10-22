@@ -1,11 +1,17 @@
 {
   "name": "pig-latin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "name": "Alejandro Lora",
+    "email": "alejandrofpo@gmail.com",
+    "url": "https://pig-latin-game.netlify.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
