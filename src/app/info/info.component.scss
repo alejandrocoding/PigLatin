@@ -9,4 +9,7 @@
 
 .info {
     margin: 25px auto;
+    &:last-child {
+        margin-bottom: 50px;
+    }
 }
